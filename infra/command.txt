@@ -1,0 +1,46 @@
+kubectl create secret generic jwt-secret --from-literal=jwt=asdf
+kubectl get secrets
+
+// build an image based on the dockerfile in the
+// current directory.
+=> docker build -t amaamoun002/ticketing .
+
+// create and start a container based on the provided image id or tag
+=> docker run [image id / image tag]
+
+// create and start container but also override the default command
+=> docker run it [image id / image tag]
+
+// print out information about all of thr running containers
+=> docker ps
+
+// execute the given command in a running container
+=> docker exec -it [container it]
+
+// Print out logs from the given container docker 
+=> docker logs [container id]
+
+// List all the running deployments
+=> kubectl get deployments
+
+// Print out details about a specific deployments
+=> kubectl describe deployment [depl name]
+
+// Create a deployment out of a config file
+=> kubectl apply -f [config file name]
+
+// Delete deployment
+=> kubectl delete deployment [depl_name]
+
+skaffold dev
+// port forward 
+ kubectl port-forward nats-depl-8577c9df6-csgbs 4222:4222
+
+ // restart nats pod
+ delete pod 
+
+ npm update @amnodejstickets/common
+
+ // env variables
+
+
